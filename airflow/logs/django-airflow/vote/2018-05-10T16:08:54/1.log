@@ -1,0 +1,19 @@
+[2018-05-11 00:17:16,146] {cli.py:374} INFO - Running on host shawn-centos
+[2018-05-11 00:17:16,188] {models.py:1197} INFO - Dependencies all met for <TaskInstance: django-airflow.vote 2018-05-10 16:08:54 [queued]>
+[2018-05-11 00:17:16,194] {models.py:1197} INFO - Dependencies all met for <TaskInstance: django-airflow.vote 2018-05-10 16:08:54 [queued]>
+[2018-05-11 00:17:16,194] {models.py:1407} INFO - 
+--------------------------------------------------------------------------------
+Starting attempt 1 of 4
+--------------------------------------------------------------------------------
+
+[2018-05-11 00:17:16,206] {models.py:1428} INFO - Executing <Task(BashOperator): vote> on 2018-05-10 16:08:54
+[2018-05-11 00:17:16,206] {base_task_runner.py:115} INFO - Running: ['bash', '-c', u'airflow run django-airflow vote 2018-05-10T16:08:54 --job_id 14 --raw -sd DAGS_FOLDER/test_airflow.py']
+[2018-05-11 00:17:16,713] {base_task_runner.py:98} INFO - Subtask: [2018-05-11 00:17:16,712] {__init__.py:45} INFO - Using executor SequentialExecutor
+[2018-05-11 00:17:16,774] {base_task_runner.py:98} INFO - Subtask: [2018-05-11 00:17:16,770] {models.py:189} INFO - Filling up the DagBag from /root/django_airflow_tutorial/airflow/dags/test_airflow.py
+[2018-05-11 00:17:16,971] {base_task_runner.py:98} INFO - Subtask: [2018-05-11 00:17:16,969] {bash_operator.py:70} INFO - Tmp dir root location: 
+[2018-05-11 00:17:16,971] {base_task_runner.py:98} INFO - Subtask:  /tmp
+[2018-05-11 00:17:16,971] {base_task_runner.py:98} INFO - Subtask: [2018-05-11 00:17:16,969] {bash_operator.py:80} INFO - Temporary script location: /tmp/airflowtmpKQeojk//tmp/airflowtmpKQeojk/voteoDWwqF
+[2018-05-11 00:17:16,971] {base_task_runner.py:98} INFO - Subtask: [2018-05-11 00:17:16,970] {bash_operator.py:88} INFO - Running command: /root/django-airflow/bin/python /root/django_airflow_tutorial/manage.py vote
+[2018-05-11 00:17:16,977] {base_task_runner.py:98} INFO - Subtask: [2018-05-11 00:17:16,977] {bash_operator.py:97} INFO - Output:
+[2018-05-11 00:17:17,236] {base_task_runner.py:98} INFO - Subtask: [2018-05-11 00:17:17,235] {bash_operator.py:101} INFO - Votes for "Question object" successfully
+[2018-05-11 00:17:17,240] {base_task_runner.py:98} INFO - Subtask: [2018-05-11 00:17:17,238] {bash_operator.py:105} INFO - Command exited with return code 0
